@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+<a-scene>
+    <a-sky src="./img/Kosmos.jpg">
+
+    </a-sky>
+    <a-entity position="0 30 150" id="camera">
+        <a-camera>
+
+        </a-camera>
+    </a-entity>
+    <a-entity id="sun">
+        <a-sphere color="yellow" radius="12" src="./img/8k_sun.jpg"></a-sphere>
+    </a-entity>
+    <a-entity id="mercury">
+        <a-sphere position="-22 0 5" src="./img/Без названия (1).jfif" radius="2" color="grey"></a-sphere>
+        <a-animation attribute="rotation" dur="880" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="venus">
+        <a-sphere src="./img/Без названия (2).jfif" position="-34 0 -16" radius="4"></a-sphere>
+        <a-animation attribute="rotation" dur="2250" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+        
+    </a-entity>
+    <a-entity id="earth">
+        <a-sphere src="./img/Без названия (3).jfif" position="-53 0 13" radius="4.2">
+            <a-entity id="spytnik">
+                <a-image height="10" width="10" position="-12 4 0" src="./img/5a2311bc2642e7.3807955015122477401567.png"></a-image>
+                <a-animation attribute="rotation" dur="5000" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+            </a-entity>
+            <a-entity id="luna">
+                <a-sphere position="-8 0 0"  radius="2" src="./img/1626866427_5-kartinkin-com-p-poverkhnost-luni-tekstura-krasivo-7.jpg"></a-sphere>
+                <a-animation attribute="rotation" dur="1000" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+            </a-entity>
+            
+        </a-sphere>
+        <a-animation attribute="rotation" dur="3650" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="mars">
+        <a-sphere src="./img/Без названия (4).jfif" position="-76 0 17" radius="3.8"></a-sphere>
+        <a-animation attribute="rotation" dur="6870" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="jupiter">
+        <a-sphere src="./img/Без названия (5).jfif" position="143 0 -46" radius="8"></a-sphere>
+        <a-animation attribute="rotation" dur="10000" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="saturn">
+        <a-sphere src="./img/1626918207_19-kartinkin-com-p-tekstura-planeti-saturn-krasivo-28.png" position="22 0 -120" radius="6">
+            <a-ring color="orange" opacity="0.4" radius-inner="7" radius-outer="10" rotation="-100 90 0" ></a-ring>
+        </a-sphere>
+        <a-animation attribute="rotation" dur="13000" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="uran">
+        <a-sphere src="./img/1627112578_11-kartinkin-com-p-tekstura-planeti-uran-krasivo-13.png" position="180 0 -36" radius="4"></a-sphere>
+        <a-animation attribute="rotation" dur="15400" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+    <a-entity id="neptun">
+        <a-sphere src="./img/1626254367_10-kartinkin-com-p-tekstura-neptuna-krasivo-14.jpg" position="220 0 -12" radius="3.8"></a-sphere>
+        <a-animation attribute="rotation" dur="17000" from="0 0 0" to="0 360 0" repeat="identifinite" easing="linear"></a-animation>
+    </a-entity>
+</a-scene>
+
+
+
+
+
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</body>
+</html>
